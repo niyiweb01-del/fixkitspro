@@ -206,7 +206,7 @@ const PRODUCTS = [
     ],
     category: "audits",
     categoryLabel: "Audits & fixes",
-    price: 27.4,
+    price: 1.4,
     badge: "Quick check",
     fulfillment: "instant"
   },
