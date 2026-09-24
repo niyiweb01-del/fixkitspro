@@ -107,7 +107,7 @@
       '<ul class="checkout-pay-methods" aria-label="Accepted payment methods">' +
       '<li class="pay-chip pay-visa">Visa</li><li class="pay-chip pay-mastercard">Mastercard</li><li class="pay-chip pay-verve">Verve</li><li class="pay-chip">Bank transfer</li><li class="pay-chip">USSD</li>' +
       "</ul>" +
-      '<p class="checkout-support">Questions before you pay? <a href="mailto:support@fixkit.com">support@fixkit.com</a></p>' +
+      '<p class="checkout-support">Questions before you pay? <a href="mailto:fixkits@zohomail.com">fixkits@zohomail.com</a></p>' +
       '<div class="checkout-legal-note">' +
       '<a href="privacy.html" target="_blank" rel="noopener">Privacy policy</a>' +
       '<span aria-hidden="true"> · </span>' +
