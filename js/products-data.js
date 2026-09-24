@@ -26,7 +26,7 @@ const PRODUCTS = [
     ],
     category: "audits",
     categoryLabel: "Audits & fixes",
-    price: 148.75,
+    price: 1.40,
     badge: "Bestseller",
     fulfillment: "instant"
   },
