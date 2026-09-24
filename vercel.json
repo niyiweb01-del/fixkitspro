@@ -1,0 +1,76 @@
+{
+  "version": 2,
+  "functions": {
+    "api/download.js": {
+      "includeFiles": "private/downloads/**",
+      "memory": 1024,
+      "maxDuration": 30
+    },
+    "api/verify-payment.js": {
+      "maxDuration": 20
+    },
+    "api/checkout.js": {
+      "maxDuration": 20
+    },
+    "api/quote.js": {
+      "maxDuration": 15
+    },
+    "api/paystack-webhook.js": {
+      "maxDuration": 20
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/success.html",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
+      "source": "/cart.html",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
+      "source": "/checkout.html",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/kit-source/:path*",
+      "destination": "/products.html",
+      "permanent": false
+    },
+    {
+      "source": "/private/:path*",
+      "destination": "/products.html",
+      "permanent": false
+    },
+    {
+      "source": "/lib/:path*",
+      "destination": "/products.html",
+      "permanent": false
+    },
+    {
+      "source": "/scripts/:path*",
+      "destination": "/products.html",
+      "permanent": false
+    }
+  ]
+}

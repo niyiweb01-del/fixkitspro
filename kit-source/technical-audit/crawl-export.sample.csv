@@ -1,0 +1,4 @@
+﻿url,status,issue,priority
+https://example.com/,200,missing meta description,high
+https://example.com/collections,404,broken link,critical
+

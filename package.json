@@ -1,0 +1,16 @@
+{
+  "name": "fixkit",
+  "private": true,
+  "description": "Fixkit digital storefront with Paystack + Vercel serverless API",
+  "scripts": {
+    "dev": "vercel dev",
+    "build:kits": "node scripts/build-kits.js",
+    "check:catalog": "node scripts/check-catalog-sync.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "vercel": "^41.0.0"
+  }
+}

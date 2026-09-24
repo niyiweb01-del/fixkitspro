@@ -1,0 +1,65 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["private/downloads/**"]
+
+# ---- API: /api/* -> Netlify function ----
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/payments/:splat"
+  status = 200
+  force = true
+
+# ---- Keep private files off the public web (paid downloads, source, server code) ----
+[[redirects]]
+  from = "/private/*"
+  to = "/products.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/kit-source/*"
+  to = "/products.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/lib/*"
+  to = "/products.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/scripts/*"
+  to = "/products.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/netlify/*"
+  to = "/products.html"
+  status = 302
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store"
+[[headers]]
+  for = "/success.html"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+[[headers]]
+  for = "/cart.html"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+[[headers]]
+  for = "/checkout.html"
+  [headers.values]
+    X-Robots-Tag = "noindex"

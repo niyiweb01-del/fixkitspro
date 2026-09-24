@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — FIX KIT</title>
+<meta name="description" content="Secure FIX KIT checkout. Pay with Paystack and download your kits.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20260923">
+<link rel="icon" type="image/png" href="images/fixkit-icon.png">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="FIX KIT home">
+      <img class="brand-logo" src="images/fixkit-logo.png" alt="FIX KIT">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#offer">What we offer</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="cart-link" data-cart-link href="cart.html" aria-label="Cart">
+        Cart <span class="cart-count" data-cart-count hidden>0</span>
+      </a>
+      <a class="btn btn-primary btn-sm" href="products.html">Browse products</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="checkout-page">
+    <div class="wrap" id="checkoutRoot"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-bottom">
+    <p>© 2026 FIX KIT. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js?v=20260923"></script>
+<script src="js/products-data.js?v=20260923"></script>
+<script src="js/cart.js?v=20260923"></script>
+<script src="js/paystack.js?v=20260923"></script>
+<script src="js/checkout-page.js?v=20260923"></script>
+<script src="js/main.js?v=20260923"></script>
+</body>
+</html>
