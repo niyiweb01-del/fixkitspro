@@ -60,7 +60,6 @@
       '<div class="checkout-form-panel">' +
       '<p class="checkout-eyebrow">🔒 Secure checkout</p>' +
       "<h1>Complete your order</h1>" +
-      '<p class="checkout-lede">Enter your details below. Prices are shown in USD — Paystack will charge the live equivalent in your local currency.</p>' +
       '<form id="checkoutBuyerForm" class="checkout-buyer-form" novalidate>' +
       '<label for="buyerName">Full name</label>' +
       '<input id="buyerName" name="name" type="text" autocomplete="name" maxlength="80" required value="' +
@@ -76,20 +75,6 @@
       formatPrice(cart.subtotal()) +
       "</button>" +
       '<a class="btn btn-text" href="cart.html">Back to cart</a>' +
-      '<div class="checkout-trust-grid" aria-label="Purchase protections">' +
-      '<div class="trust-badge">' +
-      '<span class="trust-badge-icon">🔒</span>' +
-      '<div><strong>Encrypted checkout</strong><span>256-bit SSL. Card details go straight to Paystack and never touch our servers.</span></div>' +
-      "</div>" +
-      '<div class="trust-badge">' +
-      '<span class="trust-badge-icon">🛡️</span>' +
-      '<div><strong>PCI-DSS compliant</strong><span>Payments are processed by Paystack, a PCI-DSS Level 1 certified provider.</span></div>' +
-      "</div>" +
-      '<div class="trust-badge">' +
-      '<span class="trust-badge-icon">⚡</span>' +
-      '<div><strong>Instant delivery</strong><span>Your files and receipt land in your inbox the moment payment clears.</span></div>' +
-      "</div>" +
-      "</div>" +
       "</form>" +
       "</div>" +
       '<aside class="checkout-summary">' +
@@ -104,15 +89,6 @@
       "</strong>" +
       "</div>" +
       '<p class="cart-summary-note">🔒 Secured by Paystack</p>' +
-      '<ul class="checkout-pay-methods" aria-label="Accepted payment methods">' +
-      '<li class="pay-chip pay-visa">Visa</li><li class="pay-chip pay-mastercard">Mastercard</li><li class="pay-chip pay-verve">Verve</li><li class="pay-chip">Bank transfer</li><li class="pay-chip">USSD</li>' +
-      "</ul>" +
-      '<p class="checkout-support">Questions before you pay? <a href="mailto:fixkits@zohomail.com">fixkits@zohomail.com</a></p>' +
-      '<div class="checkout-legal-note">' +
-      '<a href="privacy.html" target="_blank" rel="noopener">Privacy policy</a>' +
-      '<span aria-hidden="true"> · </span>' +
-      '<a href="terms.html" target="_blank" rel="noopener">Terms of service</a>' +
-      "</div>" +
       "</aside>" +
       "</div>";
 
