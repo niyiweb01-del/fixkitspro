@@ -266,7 +266,7 @@ const PRODUCTS = [
     ],
     category: "growth",
     categoryLabel: "Growth",
-    price: 512.6,
+    price: 700.6,
     badge: "Premium",
     fulfillment: "instant"
   }
